@@ -1,0 +1,17 @@
+{
+  "name": "aether-call-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "High-Performance, Privacy-First, Low-Bandwidth Video and Voice Calling Platform",
+  "scripts": {
+    "dev:server": "pnpm --filter @aether/server dev",
+    "dev:client": "pnpm --filter @aether/client dev",
+    "dev": "pnpm --filter \"@aether/*\" --parallel dev",
+    "build": "pnpm --filter \"@aether/*\" build",
+    "test": "pnpm --filter @aether/server test && pnpm --filter @aether/client test"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}
